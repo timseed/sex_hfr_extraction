@@ -95,7 +95,7 @@ I run a python script called **graph.py** like this
 
 and I see 
 
-~[./graph.png](./graph.png)
+![./graph.png](./graph.png)
 
 
 **NOTE**: python needs 2 modules ... installed with 
