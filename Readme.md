@@ -6,7 +6,11 @@ Now it is possible to see the HFR inside kstars/already (Fits viewer, Show Stars
 
 ## Sextractor 
 
-A real *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding still appears to use this code base. 
+Sextractor is areal *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding still appears to use this code base. 
+
+It is **VERY** configurable, but as it feels more like software from the Fortran days (f77 anyone ?) - it probably has lost it's appear to some people. 
+
+It compiles nicely, allowing many customizations to its operating parameters.
 
 ### Installing 
 
@@ -16,7 +20,7 @@ I  build all my code from scratch ... and this code is no exception.
    git clone https://github.com/astromatic/sextractor.git
    cd sextractor 
 
-Building is very standard
+Building is very standard 
 
 ```bash
 ./autogen
@@ -27,9 +31,18 @@ sudo make install
 
 ## Adding a HFR-Esque option. 
 
-Please note.. there is no Direct HFR value .... instead I choose to use **FLUX_RADIUS**, there are many other parameters you can use so if something else suite you better use it. 
+Please note.. FLUX_RADIUS could refer to 
+   - HFR (Half Flux Radius)
+   - HFD (Hald Flux Diameter) 
 
-Now the slightly messy part. 
+The documentation states 
+
+```text
+In SExtractor, FLUX_RADIUS is an output parameter that provides the radius of a circle (centered on the object's centroid) that encloses a specified fraction of an object's total flux
+```
+
+This value appears to be configurable using **PHO_FLUXFRAC** and other variables - but these considerations are considered out of scope, for this project.
+
 
 ## Making HFR files 
 
