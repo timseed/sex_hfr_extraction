@@ -6,7 +6,7 @@ Now it is possible to see the HFR inside kstars/already (Fits viewer, Show Stars
 
 ## Sextractor 
 
-Sextractor is areal *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding still appears to use this code base. 
+Sextractor is a real *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding still appears to use this code base. 
 
 It is **VERY** configurable, but as it feels more like software from the Fortran days (f77 anyone ?) - it probably has lost it's appear to some people. 
 
