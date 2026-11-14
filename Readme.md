@@ -4,6 +4,15 @@ Purpose: I would like to try and get my guiding somewhat better,  as within EKOS
 
 Now it is possible to see the HFR inside kstars/already (Fits viewer, Show Stars) - but this means you need to manually look, and keep track of the HFR. That will not work in the long term. 
 
+
+Please clone this project like this 
+
+    git clone git@github.com:timseed/sex_hfr_extraction.git ~/hfr 
+
+The Sextractor (and Python) files have hard coded paths (which are easy to change), just look for the string **~/hfr/** 
+
+
+
 ## Sextractor 
 
 Sextractor is a real *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding modules still appears to use this code base. 
@@ -57,26 +66,26 @@ These files are provided in this git repo. It is that simple.
 
 However you will need someway to make this a shortcut. So on Linux/Mac you will need an alias 
 
-    alias hf='sex -c /home/tim/hfr/hfr.sex -PARAMETERS_NAME /home/tim/hfr/hfr.param'
+    alias hf='sex -c ~/hfr/hfr.sex -PARAMETERS_NAME ~/hfr/hfr.param'
 
 You should place this in your login shell auto file typically either (~/.bashrc or ~/.zshrc)
 
 # Running 
 
-Assume I saved a FITS file to */home/tim/test/img_01.fits* 
+Assume I saved a FITS file to *~/test/img_01.fits* 
 
 In a command shell windows I just type 
 
-    hf /home/tim/test/img_01.fits 
+    hf ~/test/img_01.fits 
 
 And nothing happens !!
 Because *sex* is file based, and the output of the command was placed in a file defined in **hfr.sex** specifically 
 
-    CATALOG_NAME     /home/tim/hfr/hfr.cat 
+    CATALOG_NAME     ~/hfr/hfr.cat 
 
 If we type(cat) this file 
 
-    cat /home/tim/hfr/hfr.cat 
+    cat ~/hfr/hfr.cat 
 
 I see 
 

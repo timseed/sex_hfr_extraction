@@ -1,8 +1,9 @@
 import plotext as plt
 import numpy as np
+from pathlib import Path
 
-filename = "/home/tim/hfr/hfr.cat"
-
+filename = "~/hfr/hfr.cat"
+filename = Path(filename).expanduser()
 flux_radius = []
 
 # Read the SExtractor catalogue
