@@ -98,6 +98,9 @@ and I see
 ![./graph.png](./graph.png)
 
 
+**PLEASE NOTE: This is command line graph**
+
+
 **NOTE**: python needs 2 modules ... installed with 
 
     pip install -r requirements.txt
