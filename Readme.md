@@ -6,15 +6,17 @@ Now it is possible to see the HFR inside kstars/already (Fits viewer, Show Stars
 
 ## Sextractor 
 
-Sextractor is a real *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding still appears to use this code base. 
+Sextractor is a real *old-school* piece of code, which you can tell has been made to process 000's of images - in varying ways.  Sadly not seen much at command level these days - but a lot of guiding modules still appears to use this code base. 
 
-It is **VERY** configurable, but as it feels more like software from the Fortran days (f77 anyone ?) - it probably has lost it's appear to some people. 
+It is **VERY** configurable, but as it feels more like software from the Fortran days (f77 anyone ?) - it probably has lost it's appeal to some people. 
 
-It compiles nicely, allowing many customizations to its operating parameters.
+It compiles nicely, allowing many customizations to its operating parameters. Great to see code that just works with no fluff around it. 
 
 ### Installing 
 
-I  build all my code from scratch ... and this code is no exception. 
+I  build **all** my Astro code from scratch and this code is no exception. 
+
+It will do something like this 
 
    cd ~/Dev/C++/Astro # Or where you do this stuff 
    git clone https://github.com/astromatic/sextractor.git
@@ -49,6 +51,7 @@ This value appears to be configurable using **PHO_FLUXFRAC** and other variables
 *Sex* is a file based engine, so that means to do something like *extract the HFR/Flux Radius* you will need some specific files. 
 
 These files are provided in this git repo. It is that simple.
+
 
 # Command line activate 
 
