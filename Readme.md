@@ -123,6 +123,13 @@ and I see
 ![./graph.png](./graph.png)
 
 
+Should you want to see the estimate of star_size in pixel then the command is 
+
+
+    python graph_hfr.py  width 
+
+I suggest you create 2 aliases rather than typing this each time. 
+
 **PLEASE NOTE: This is command line graph**
 
 
